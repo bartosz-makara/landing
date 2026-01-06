@@ -4,6 +4,8 @@ import TestimonialSingle from "./testimonial-single";
 import feature1 from "../../public/feature_1.gif";
 import feature2 from "../../public/feature_2.png";
 import feature3 from "../../public/feature_3.gif";
+import Image from "next/image";
+import Link from "next/link";
 
 const features = [
   {
@@ -55,6 +57,7 @@ const features = [
       </svg>,
     ],
     image: feature1,
+    href: "",
   },
   {
     id: 2,
@@ -104,6 +107,7 @@ const features = [
       </svg>,
     ],
     image: feature2,
+    href: "",
   },
   {
     id: 3,
@@ -152,6 +156,7 @@ const features = [
       </svg>,
     ],
     image: feature3,
+    href: "",
   },
 ];
 
@@ -269,22 +274,24 @@ export default function AccordionFeatures({ config }: { config?: any }) {
             </ul>
             <div className="">
               {features.map((feature) => (
-                <img
-                  key={feature.id}
-                  alt={`Feature ${feature.id}: ${feature.title}`}
-                  loading="lazy"
-                  width="500"
-                  height="500"
-                  decoding="async"
-                  data-nimg="1"
-                  className={`w-full rounded-[16px] border bg-slate-50 object-contain object-center transition-opacity duration-300 sm:-m-2 sm:w-[26rem] sm:p-2 ${
-                    activeFeature === feature.id
-                      ? "opacity-100"
-                      : "hidden opacity-0"
-                  }`}
-                  style={{ color: "transparent" }}
-                  src={feature.image?.src || ""}
-                />
+                <Link href={feature.href} key={feature.id}>
+                  <Image
+                    key={feature.id}
+                    alt={`Feature ${feature.id}: ${feature.title}`}
+                    loading="lazy"
+                    width={500}
+                    height={500}
+                    decoding="async"
+                    data-nimg="1"
+                    className={`w-full rounded-[16px] border bg-slate-50 object-contain object-center transition-opacity duration-300 sm:-m-2 sm:w-[26rem] sm:p-2 ${
+                      activeFeature === feature.id
+                        ? "opacity-100"
+                        : "hidden opacity-0"
+                    }`}
+                    style={{ color: "transparent" }}
+                    src={feature.image?.src || ""}
+                  />
+                </Link>
               ))}
             </div>
           </div>
