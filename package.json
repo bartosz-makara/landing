@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npx @cloudflare/next-on-pages@1",
+    "build": "npx @cloudflare/next-on-pages",
     "build:debug": "NODE_OPTIONS=--enable-source-maps next build",
     "start": "next start",
     "lint": "next lint"
