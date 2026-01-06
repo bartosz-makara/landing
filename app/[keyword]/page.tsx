@@ -27,13 +27,13 @@ export const generateMetadata = ({
 
 export async function generateStaticParams() {
   return keywords.map((keyword) => ({
-    keyword: keyword.replace(/\s+/g, "-").toLowerCase(),
+    keyword: keyword?.replace(/\s+/g, "-").toLowerCase(),
   }));
 }
 function isValidKeyword(keyword: string): boolean {
   return keywords
     .map((k) => k.replace(/\s+/g, "-").toLowerCase())
-    .includes(keyword.toLowerCase());
+    .includes(keyword?.toLowerCase());
 }
 
 export default function KeywordPage({

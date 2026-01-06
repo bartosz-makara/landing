@@ -7,7 +7,7 @@ export type KeywordConfig = {
 };
 
 const keywordConfigs: { [keyword: string]: KeywordConfig } = {
-  "ai-quiz-creation": {
+  "ai quiz creation": {
     Hero: {
       title: "AI-Powered Quiz Creation",
       subtitle: "Create engaging quizzes in minutes with AI assistance",
@@ -33,7 +33,7 @@ const keywordConfigs: { [keyword: string]: KeywordConfig } = {
       buttonText: "Try AI Quiz Creator",
     },
   },
-  "ai-lesson-planning": {
+  "ai lesson planning": {
     Hero: {
       title: "AI-Powered Lesson Planning",
       subtitle: "Create engaging lessons in minutes with AI assistance",
