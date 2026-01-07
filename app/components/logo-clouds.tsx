@@ -1,4 +1,4 @@
-import Calendly from "./booking";
+import CalendlyGate from "./booking-gate";
 
 export default function LogoClouds() {
   return (
@@ -7,7 +7,7 @@ export default function LogoClouds() {
         <h2 className="text-md text-center leading-8 text-slate-600">
           Trusted by teachers worldwide
         </h2>
-        <Calendly />
+        <CalendlyGate />
         <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5"></div>
       </div>
     </div>

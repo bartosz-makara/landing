@@ -1,5 +1,3 @@
-"use client";
-
 import { InlineWidget } from "react-calendly";
 
 const Calendly = () => {
