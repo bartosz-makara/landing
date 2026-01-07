@@ -1,8 +1,8 @@
 import type { JSX } from "react";
 import Image, { StaticImageData } from "next/image";
 
-import artemImg from "../../../public/artem.png";
-import quillmindsImg from "../../../public/cover.png";
+import artemImg from "../../../public/fridge.webp";
+import quillmindsImg from "../../../public/business.webp";
 
 // ==================================================================================================================================================================
 // BLOG CATEGORIES 🏷️

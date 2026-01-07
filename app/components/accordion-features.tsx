@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import TestimonialSingle from "./testimonial-single";
-import feature1 from "../../public/feature_1.gif";
-import feature2 from "../../public/feature_2.png";
-import feature3 from "../../public/feature_3.gif";
+// import feature1 from "../../public/feature_1.mp4";
+// import feature2 from "../../public/business.webp";
+// import feature3 from "../../public/";
 import Image from "next/image";
 // import Image from "next/image";
 // import Link from "next/link";
@@ -57,7 +57,8 @@ const features = [
         <path d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-12.15 12.15a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32L19.513 8.2z" />
       </svg>,
     ],
-    image: feature1,
+    // image: feature1,
+    video: "/feature_1.mp4",
   },
   {
     id: 2,
@@ -106,7 +107,7 @@ const features = [
         />
       </svg>,
     ],
-    image: feature2,
+    video: "/feature_1.mp4",
   },
   {
     id: 3,
@@ -154,7 +155,7 @@ const features = [
         <path d="M4.462 19.462c.42-.419.753-.89 1-1.394.453.213.902.434 1.347.661a6.743 6.743 0 01-1.286 1.794.75.75 0 11-1.06-1.06z" />
       </svg>,
     ],
-    image: feature3,
+    video: "/feature_1.mp4",
   },
 ];
 
@@ -272,24 +273,41 @@ export default function AccordionFeatures({ config }: { config?: any }) {
             </ul>
             <div className="">
               {features.map((feature) => (
-                // <Link href={feature.href} key={feature.id}>
-                <Image
+                // <Image
+                //   key={feature.id}
+                //   alt={`Feature ${feature.id}: ${feature.title}`}
+                //   loading="lazy"
+                //   width="500"
+                //   height="500"
+                //   decoding="async"
+                //   data-nimg="1"
+                //   className={`w-full rounded-[16px] border bg-slate-50 object-contain object-center transition-opacity duration-300 sm:-m-2 sm:w-[26rem] sm:p-2 ${
+                //     activeFeature === feature.id
+                //       ? "opacity-100"
+                //       : "hidden opacity-0"
+                //   }`}
+                //   style={{ color: "transparent" }}
+                //   src={feature.image?.src || ""}
+                // />
+                <div
                   key={feature.id}
-                  alt={`Feature ${feature.id}: ${feature.title}`}
-                  loading="lazy"
-                  width="500"
-                  height="500"
-                  decoding="async"
-                  data-nimg="1"
                   className={`w-full rounded-[16px] border bg-slate-50 object-contain object-center transition-opacity duration-300 sm:-m-2 sm:w-[26rem] sm:p-2 ${
                     activeFeature === feature.id
                       ? "opacity-100"
                       : "hidden opacity-0"
                   }`}
-                  style={{ color: "transparent" }}
-                  src={feature.image?.src || ""}
-                />
-                // </Link>
+                >
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    // style={{ color: "transparent" }}
+                    // src={feature.video?.src || ""}
+                  >
+                    <source src={feature.video || ""} type="video/mp4" />
+                  </video>
+                </div>
               ))}
             </div>
           </div>

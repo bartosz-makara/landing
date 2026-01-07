@@ -1,7 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
 import SVGLogo from "./svg-logo";
-import artemImg from "../../public/artem.png";
 
 export default function Footer() {
   return (
@@ -59,37 +57,6 @@ export default function Footer() {
                   Privacy policy
                 </Link>
               </div>
-            </div>
-          </div>
-        </div>
-        <div className="mt-12 text-sm md:mt-16">
-          <div className="flex flex-row gap-4 justify-start items-center">
-            <Image
-              alt="Artem Kirsanov"
-              src={artemImg}
-              width={48}
-              height={48}
-              className="object-cover w-12 rounded-full aspect-square"
-            />
-            <div className="leading-relaxed text-left text-base-content-secondary">
-              Hey Curious 👋 I&apos;m{" "}
-              <a
-                href="#"
-                target="_blank"
-                rel="noreferrer"
-                className="font-medium link text-base-content"
-              >
-                Artem
-              </a>
-              , the creator of QuillMinds. You can follow my work on{" "}
-              <a
-                href="https://x.com/kirsnvartem"
-                target="_blank"
-                rel="noreferrer"
-                className="font-medium link text-base-content"
-              >
-                X.
-              </a>
             </div>
           </div>
         </div>
