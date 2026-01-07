@@ -171,7 +171,7 @@ export default function AccordionFeatures({ config }: { config?: any }) {
         <h2 className="mb-12 text-4xl font-extrabold tracking-tight text-slate-800 md:mb-24 lg:text-5xl">
           AI-powered lesson preparation <br />
           <span className="relative mt-2 inline-block">
-            <span className="absolute inset-0 -rotate-1 transform bg-blue-600"></span>
+            <span className="absolute inset-0 -rotate-1 transform bg-orange-600"></span>
             <span className="relative z-10 px-2 py-2 text-white">
               made easy
             </span>

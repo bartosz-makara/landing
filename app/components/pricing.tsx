@@ -7,7 +7,7 @@ export default function Pricing({ config }: { config?: any }) {
       <div className="mx-auto max-w-5xl px-8 py-24">
         <div className="mb-20 flex w-full flex-col text-center">
           <div className="mb-4">
-            <div className="mx-auto max-w-fit animate-pulse whitespace-nowrap rounded-full bg-blue-500 px-2 py-1 text-xs font-semibold text-white">
+            <div className="mx-auto max-w-fit animate-pulse whitespace-nowrap rounded-full bg-orange-500 px-2 py-1 text-xs font-semibold text-white">
               ✨ Launch discount — $50 OFF ✨
             </div>
           </div>
@@ -24,7 +24,7 @@ export default function Pricing({ config }: { config?: any }) {
             key="Free Plan"
             title="Free Plan"
             isFeatured={false}
-            price={0}
+            price={17000}
             originalPrice={0}
             features={[
               <span key="feature1">50 AI-generated lesson plans</span>,
@@ -38,8 +38,8 @@ export default function Pricing({ config }: { config?: any }) {
             key="Pro Plan"
             title="Pro Plan"
             isFeatured={true}
-            price={19.99}
-            originalPrice={30}
+            price={30000}
+            originalPrice={34000}
             features={[
               <span key="feature1">Unlimited AI-generated lesson plans</span>,
               <span key="feature2">Advanced customization options</span>,
@@ -86,14 +86,14 @@ function PricingCard({
     <div className={`relative w-full max-w-lg ${isFeatured ? "lg:-mt-4" : ""}`}>
       {isFeatured && (
         <div className="absolute left-1/2 top-0 z-20 -translate-x-1/2 -translate-y-1/2">
-          <span className="whitespace-nowrap rounded-full bg-blue-500 px-2 py-1 text-xs font-semibold text-white">
-            BEST TEACHER&apos;S CHOICE
+          <span className="whitespace-nowrap rounded-full bg-orange-500 px-2 py-1 text-xs font-semibold text-white">
+            NAJPOPULARNIEJSZY
           </span>
         </div>
       )}
       <div
         className={`relative z-10 h-full rounded-lg ${
-          isFeatured ? "ring-2 ring-blue-500" : "border border-zinc-200"
+          isFeatured ? "ring-2 ring-orange-500" : "border border-zinc-200"
         }`}
       >
         <div className="flex h-full flex-col gap-5 rounded-lg bg-white p-8 lg:gap-8">
@@ -113,13 +113,13 @@ function PricingCard({
               </p>
             </div>
             <p className="text-5xl font-black tracking-tight text-slate-800">
-              ${price}
+              PLN {price}
             </p>
-            <div className="mb-[4px] flex flex-col justify-end">
+            {/* <div className="mb-[4px] flex flex-col justify-end">
               <p className="text-xs font-semibold uppercase text-slate-500">
-                USD / month
+                PLN / month
               </p>
-            </div>
+            </div> */}
           </div>
           <ul
             className={`flex-1 space-y-2.5 text-base leading-relaxed ${
@@ -145,8 +145,8 @@ function PricingCard({
             ))}
           </ul>
           <div className="space-y-2">
-            <Button href={buttonLink} color="blue" className="w-full">
-              Get Quillminds
+            <Button href={buttonLink} color="green" className="w-full">
+              Rezerwuj
             </Button>
           </div>
         </div>

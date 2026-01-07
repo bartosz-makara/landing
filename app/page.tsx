@@ -15,10 +15,10 @@ export default function Home() {
     <Container>
       <Header />
       <Hero />
-      <LogoClouds />
       <BeforeAfter />
       <AccordionFeatures />
       <Pricing />
+      <LogoClouds />
       <FAQ />
       <CTA />
       <Footer />

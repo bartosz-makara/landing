@@ -2,9 +2,9 @@ import CalendlyGate from "./booking-gate";
 
 export default function LogoClouds() {
   return (
-    <div className="mx-auto max-w-5xl bg-white py-12">
+    <div className="flex items-center justify-center mx-auto max-w-5xl bg-white py-12">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className="text-md text-center leading-8 text-slate-600">
+        <h2 className="text-md text-center leading-8 text-slate-600 pb-8">
           Trusted by teachers worldwide
         </h2>
         <CalendlyGate />

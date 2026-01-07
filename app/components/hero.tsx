@@ -1,3 +1,4 @@
+import CalendlyGate from "./booking-gate";
 import { Button } from "./button";
 import TestimonialsAvatars from "./testimonials-avatars";
 
@@ -15,18 +16,13 @@ function Hero({ config }: { config?: any }) {
             <p className="mt-6 text-base font-light leading-8 text-secondary-foreground text-slate-500 sm:text-lg">
               AI-Powered Lesson Planning Made Easy. For teachers at any level.
             </p>
+            <HeroFooter />
             <div className="mt-10 flex flex-col items-center justify-center gap-y-6">
-              <Button
-                color="blue"
-                href={"/sign-up"}
-                className="h-12 w-64 rounded-md"
-              >
-                Get Started
-              </Button>
+              <CalendlyGate />
             </div>
           </div>
         </div>
-        <HeroFooter />
+
         {/* <TestimonialsAvatars priority={true} /> */}
       </div>
     </div>
@@ -34,7 +30,7 @@ function Hero({ config }: { config?: any }) {
 }
 const HeroFooter = () => {
   return (
-    <div className="-gap-1 mt-auto flex items-center justify-center">
+    <div className="-gap-1 mt-auto flex items-center justify-center pt-8">
       <svg
         viewBox="0 0 773 1262"
         className="w-8 rotate-12 fill-slate-500/40"

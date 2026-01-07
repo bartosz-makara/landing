@@ -12,7 +12,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Container } from "./container";
 import { NavLinks } from "./nav-links";
 import { Button } from "./button";
-import SVGLogo from "./svg-logo";
+import logo from "../../public/preconex-logo.svg";
+import Image from "next/image";
 
 function MenuIcon(props: React.ComponentPropsWithoutRef<"svg">) {
   return (
@@ -62,10 +63,7 @@ export function Header() {
         <Container className="flex relative z-50 justify-between py-8">
           <div className="flex relative z-10 gap-16 justify-between items-center w-full">
             <Link href="/" className="flex gap-2 items-center font-semibold">
-              <SVGLogo />
-              <span className="text-lg font-bold text-slate-800">
-                Quillminds
-              </span>
+              <Image src={logo} alt={"logo"} width={160} />
             </Link>
             <div className="hidden justify-center items-center lg:flex lg:gap-10">
               <NavLinks />

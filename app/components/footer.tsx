@@ -1,5 +1,6 @@
 import Link from "next/link";
-import SVGLogo from "./svg-logo";
+import Image from "next/image";
+import logo from "../../public/preconex-logo.svg";
 
 export default function Footer() {
   return (
@@ -12,10 +13,7 @@ export default function Footer() {
               aria-current="page"
               className="flex gap-2 justify-center items-center md:justify-start"
             >
-              <SVGLogo />
-              <strong className="text-base font-extrabold tracking-tight text-slate-800 md:text-lg">
-                Quillminds
-              </strong>
+              <Image src={logo} alt={"logo"} />
             </Link>
             <p className="mt-3 text-sm text-slate-700">
               AI-powered lesson planning made easy. Create engaging and
@@ -24,6 +22,14 @@ export default function Footer() {
             <p className="mt-3 text-sm text-slate-700">
               Copyright © {new Date().getFullYear()} - All rights reserved
             </p>
+
+            <div>
+              <p className="mt-3 text-sm text-slate-700">
+                Icons made from{" "}
+                <a href="https://www.onlinewebfonts.com/icon">svg icons</a>
+                is licensed by CC BY 4.0
+              </p>
+            </div>
           </div>
           <div className="flex flex-wrap flex-grow justify-center mt-10 -mb-10 text-center md:mt-0 md:pl-24">
             <div className="px-4 w-full md:w-1/2 lg:w-1/3">
