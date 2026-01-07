@@ -13,6 +13,8 @@ import { keywords } from "./keywords";
 import { redirect } from "next/navigation";
 import keywordConfigs from "./keywordConfig";
 
+type KeywordPageProps = { params: { keyword: string } };
+
 export const generateMetadata = ({
   params,
 }: {
@@ -36,12 +38,8 @@ function isValidKeyword(keyword: string): boolean {
     .includes(keyword?.toLowerCase());
 }
 
-export default function KeywordPage({
-  params,
-}: {
-  params: { keyword: string };
-}) {
-  const keyword = params.keyword;
+export default function KeywordPage({ params }: KeywordPageProps) {
+  const { keyword } = params;
   if (!isValidKeyword(keyword)) {
     return redirect("/");
   }

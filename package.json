@@ -13,13 +13,11 @@
     "@headlessui/react": "^2.1.8",
     "clsx": "^2.1.1",
     "framer-motion": "^11.9.0",
-    "next": "15.5.2",
+    "next": "16.1.1",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.13.16",
-    "@loomhq/loom-embed": "^1.7.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
