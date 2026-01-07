@@ -4,6 +4,7 @@ import TestimonialSingle from "./testimonial-single";
 import feature1 from "../../public/feature_1.gif";
 import feature2 from "../../public/feature_2.png";
 import feature3 from "../../public/feature_3.gif";
+import Image from "next/image";
 // import Image from "next/image";
 // import Link from "next/link";
 
@@ -272,7 +273,7 @@ export default function AccordionFeatures({ config }: { config?: any }) {
             <div className="">
               {features.map((feature) => (
                 // <Link href={feature.href} key={feature.id}>
-                <img
+                <Image
                   key={feature.id}
                   alt={`Feature ${feature.id}: ${feature.title}`}
                   loading="lazy"
