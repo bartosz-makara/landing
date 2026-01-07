@@ -1,12 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import TestimonialSingle from "./testimonial-single";
-// import feature1 from "../../public/feature_1.mp4";
-// import feature2 from "../../public/business.webp";
-// import feature3 from "../../public/";
-import Image from "next/image";
-// import Image from "next/image";
-// import Link from "next/link";
+import { LazyVideo } from "../components/lazy-video";
 
 const features = [
   {
@@ -297,16 +292,7 @@ export default function AccordionFeatures({ config }: { config?: any }) {
                       : "hidden opacity-0"
                   }`}
                 >
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    // style={{ color: "transparent" }}
-                    // src={feature.video?.src || ""}
-                  >
-                    <source src={feature.video || ""} type="video/mp4" />
-                  </video>
+                  <LazyVideo src={feature?.video || ""} />
                 </div>
               ))}
             </div>
