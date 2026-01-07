@@ -41,12 +41,13 @@ export default function KeywordPage({
 }: {
   params: { keyword: string };
 }) {
-  if (!isValidKeyword(params.keyword)) {
+  const keyword = params.keyword;
+  if (!isValidKeyword(keyword)) {
     return redirect("/");
   }
   //Use the decoded keyword when needed
-  const decodedKeyword = decodeURIComponent(params.keyword).replace(/-/g, " ");
-  const config = keywordConfigs[params.keyword] || {};
+  const decodedKeyword = decodeURIComponent(keyword).replace(/-/g, " ");
+  const config = keywordConfigs[keyword] || {};
 
   return (
     <Container>
