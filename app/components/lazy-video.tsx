@@ -33,7 +33,7 @@ export function LazyVideo({ src, poster }: { src: string; poster?: string }) {
       playsInline
       preload="none"
       poster={poster}
-      className="w-full"
+      className="w-full rounded-lg"
     >
       <source src={src || ""} type="video/mp4" />
     </video>

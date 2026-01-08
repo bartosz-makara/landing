@@ -3,6 +3,18 @@ import { useState } from "react";
 import dynamic from "next/dynamic";
 import { Button } from "./button";
 
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
+import { DrawerDemo } from "./drawer";
+
 const Calendly = dynamic(() => import("./booking"), {
   ssr: false,
   loading: () => <div className="h-[1000px]" />,
@@ -23,7 +35,7 @@ export default function CalendlyGate() {
         </Button>
       )}
 
-      {open && <Calendly />}
+      {open && DrawerDemo()}
     </>
   );
 }

@@ -83,17 +83,21 @@ function PricingCard({
   description: string;
 }) {
   return (
-    <div className={`relative w-full max-w-lg ${isFeatured ? "lg:-mt-4" : ""}`}>
+    <div
+      className={`relative w-full drop-shadow-2xl max-w-lg ${
+        isFeatured ? "lg:-mt-4" : ""
+      }`}
+    >
       {isFeatured && (
         <div className="absolute left-1/2 top-0 z-20 -translate-x-1/2 -translate-y-1/2">
-          <span className="whitespace-nowrap rounded-full bg-orange-500 px-2 py-1 text-xs font-semibold text-white">
+          <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-blue-800 via-blue-700 to-blue-600 px-2 py-1 text-xs font-semibold text-white">
             NAJPOPULARNIEJSZY
           </span>
         </div>
       )}
       <div
         className={`relative z-10 h-full rounded-lg ${
-          isFeatured ? "ring-2 ring-orange-500" : "border border-zinc-200"
+          isFeatured ? "ring-2 ring-blue-600" : "border border-zinc-200"
         }`}
       >
         <div className="flex h-full flex-col gap-5 rounded-lg bg-white p-8 lg:gap-8">
@@ -145,7 +149,7 @@ function PricingCard({
             ))}
           </ul>
           <div className="space-y-2">
-            <Button href={buttonLink} color="green" className="w-full">
+            <Button href={buttonLink} color="dark" className="w-full">
               Rezerwuj
             </Button>
           </div>

@@ -16,10 +16,12 @@ export default function BeforeAfter({ config }: { config?: any }) {
                 >
                   <path d="M232,184a8,8,0,0,1-16,0A88,88,0,0,0,67.47,120.16l26.19,26.18A8,8,0,0,1,88,160H24a8,8,0,0,1-8-8V88a8,8,0,0,1,13.66-5.66l26.48,26.48A104,104,0,0,1,232,184Z"></path>
                 </svg>
-                <p className="text-base font-semibold text-slate-700">Before</p>
+                <p className="text-base font-extrabold text-slate-700">
+                  Twoja firma teraz
+                </p>
               </div>
-              <h3 className="font-display mt-4 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-                Traditional teaching methods that limit effectiveness
+              <h3 className="font-display mt-4 text-3xl font-bold tracking-tight text-slate-700 sm:text-3xl">
+                W pułapce reputacji.
               </h3>
               <ul className="mt-6 space-y-3 text-base text-slate-600 sm:text-lg">
                 <li className="flex items-start gap-3">
@@ -96,10 +98,12 @@ export default function BeforeAfter({ config }: { config?: any }) {
               </ul>
             </div>
           </div>
-          <div className="rounded-2xl bg-blue-500 shadow-lg ring-1 ring-inset ring-blue-400">
+          <div className="rounded-2xl bg-gradient-to-br from-blue-800 via-blue-700 to-blue-600 shadow-lg ring-1 ring-inset ring-blue-400">
             <div className="p-8 sm:p-12">
               <div className="inline-flex items-center gap-2">
-                <p className="text-base font-semibold text-blue-100">After</p>
+                <p className="text-base font-extrabold text-white">
+                  Twoja firm z <span className="font-black">Preconex</span>
+                </p>
                 <svg
                   aria-hidden="true"
                   className="h-6 w-6 text-blue-100"
@@ -110,8 +114,8 @@ export default function BeforeAfter({ config }: { config?: any }) {
                   <path d="M229.66,109.66l-48,48a8,8,0,0,1-11.32-11.32L212.69,104,170.34,61.66a8,8,0,0,1,11.32-11.32l48,48A8,8,0,0,1,229.66,109.66Zm-48-11.32-48-48A8,8,0,0,0,120,56V96.3A104.15,104.15,0,0,0,24,200a8,8,0,0,0,16,0,88.11,88.11,0,0,1,80-87.63V152a8,8,0,0,0,13.66,5.66l48-48A8,8,0,0,0,181.66,98.34Z"></path>
                 </svg>
               </div>
-              <h3 className="font-display mt-4 text-2xl font-bold tracking-tight text-white sm:text-3xl">
-                An AI-powered teaching assistant that enhances education
+              <h3 className="font-display mt-4 text-3xl font-bold tracking-tight text-white sm:text-3xl">
+                <span className="font-black">Stabilny</span> tydzień pracy.
               </h3>
               <ul className="mt-6 space-y-3 text-base text-white sm:text-lg">
                 <li className="flex items-start gap-3">

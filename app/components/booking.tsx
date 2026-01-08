@@ -4,7 +4,7 @@ const Calendly = () => {
   return (
     <div className="w-full ">
       <InlineWidget
-        styles={{ height: "1000px" }}
+        styles={{ height: "700px" }}
         url="https://calendly.com/birdsoftware/meeting"
       />
     </div>

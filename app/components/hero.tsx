@@ -1,5 +1,6 @@
 import CalendlyGate from "./booking-gate";
 import { Button } from "./button";
+import { DrawerDemo } from "./drawer";
 import TestimonialsAvatars from "./testimonials-avatars";
 
 function Hero({ config }: { config?: any }) {
@@ -9,16 +10,23 @@ function Hero({ config }: { config?: any }) {
         <div className="mx-auto mb-8 max-w-2xl py-8 sm:py-8 lg:py-8">
           <div className="hidden sm:flex sm:justify-center"></div>
           <div className="mt-2 text-center">
-            <h1 className="text-4xl font-black tracking-tight text-slate-800 sm:text-6xl">
-              Focus on teaching,
-              <br /> not endless preparation.
+            <h1 className="text-4xl tracking-tight bg-gradient-to-r from-blue-800 via-blue-700 to-blue-600 bg-clip-text text-transparent font-black sm:text-6xl">
+              Wyjdź z narzędzi.
+              <br />{" "}
+              <span className="text-slate-800 font-normal">
+                Zrób miejsce na stabilny dochód.
+              </span>
             </h1>
-            <p className="mt-6 text-base font-light leading-8 text-secondary-foreground text-slate-500 sm:text-lg">
-              AI-Powered Lesson Planning Made Easy. For teachers at any level.
+            <p className="mt-6 text-base font-base leading-5 text-secondary-foreground text-slate-800 sm:text-lg">
+              Systematyczne zlecenia i pełna kontrola nad zakresem oraz
+              kalendarzem.
+              <br />
+              <span className="font-bold">Bez stresu. Bez niepewności.</span>
             </p>
             <HeroFooter />
             <div className="mt-10 flex flex-col items-center justify-center gap-y-6">
-              <CalendlyGate />
+              {/* <CalendlyGate /> */}
+              <DrawerDemo />
             </div>
           </div>
         </div>
