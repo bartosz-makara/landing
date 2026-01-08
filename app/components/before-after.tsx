@@ -4,7 +4,7 @@ export default function BeforeAfter({ config }: { config?: any }) {
       <div className="mx-auto max-w-5xl px-8 py-16 md:py-24">
         {/* <ProblemsTitle /> */}
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-          <div className="rounded-2xl bg-white shadow-lg ring-2 ring-inset ring-slate-200">
+          <div className="rounded-2xl bg-white ring-2 ring-inset ring-slate-200">
             <div className="p-8 sm:p-12">
               <div className="inline-flex items-center gap-2">
                 <svg
@@ -98,7 +98,7 @@ export default function BeforeAfter({ config }: { config?: any }) {
               </ul>
             </div>
           </div>
-          <div className="rounded-2xl bg-gradient-to-br from-blue-800 via-blue-700 to-blue-600 shadow-lg ring-1 ring-inset ring-blue-400">
+          <div className="rounded-2xl bg-blue-700 ring-1 ring-inset ring-blue-400">
             <div className="p-8 sm:p-12">
               <div className="inline-flex items-center gap-2">
                 <p className="text-base font-extrabold text-white">

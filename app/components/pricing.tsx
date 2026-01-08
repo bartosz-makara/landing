@@ -90,7 +90,7 @@ function PricingCard({
     >
       {isFeatured && (
         <div className="absolute left-1/2 top-0 z-20 -translate-x-1/2 -translate-y-1/2">
-          <span className="whitespace-nowrap rounded-full bg-gradient-to-r from-blue-800 via-blue-700 to-blue-600 px-2 py-1 text-xs font-semibold text-white">
+          <span className="whitespace-nowrap rounded-full bg-blue-700 px-2 py-1 text-xs font-semibold text-white">
             NAJPOPULARNIEJSZY
           </span>
         </div>

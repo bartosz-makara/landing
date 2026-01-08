@@ -70,7 +70,7 @@ export function DrawerDemo() {
   return (
     <Drawer open={isOpen} onClose={close}>
       <DrawerTrigger asChild>
-        <div className="w-80 drop-shadow-xl">
+        <div className="w-80">
           <Button className="w-full">Umów konsultację</Button>
         </div>
       </DrawerTrigger>

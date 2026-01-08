@@ -10,7 +10,7 @@ function Hero({ config }: { config?: any }) {
         <div className="mx-auto mb-8 max-w-2xl py-8 sm:py-8 lg:py-8">
           <div className="hidden sm:flex sm:justify-center"></div>
           <div className="mt-2 text-center">
-            <h1 className="text-4xl tracking-tight bg-gradient-to-r from-blue-800 via-blue-700 to-blue-600 bg-clip-text text-transparent font-black sm:text-6xl">
+            <h1 className="text-4xl tracking-tight text-blue-700 font-black sm:text-6xl">
               Wyjdź z narzędzi.
               <br />{" "}
               <span className="text-slate-800 font-normal">

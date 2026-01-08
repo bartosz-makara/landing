@@ -170,7 +170,7 @@ export default function AccordionFeatures({ config }: { config?: any }) {
         <h2 className="mb-12 text-4xl font-extrabold tracking-tight text-slate-800 md:mb-24 lg:text-5xl">
           Jesteś tylko <br />
           <span className="relative mt-2 inline-block">
-            <span className="absolute inset-0 -rotate-1 transform bg-gradient-to-l from-orange-600 via-orange-500 to-orange-400 drop-shadow-lg"></span>
+            <span className="absolute inset-0 -rotate-1 transform bg-orange-500"></span>
             <span className="relative z-10 px-2 py-2 text-white">
               o 3 kroki od
             </span>
@@ -194,7 +194,7 @@ export default function AccordionFeatures({ config }: { config?: any }) {
                     <span
                       className={`duration-100 ${
                         activeFeature === feature.id
-                          ? "font-bold text-blue-600"
+                          ? "font-bold text-blue-700"
                           : ""
                       }`}
                     >
@@ -203,7 +203,7 @@ export default function AccordionFeatures({ config }: { config?: any }) {
                     <span
                       className={`flex-1 text-slate-700 ${
                         activeFeature === feature.id
-                          ? "font-black text-blue-600"
+                          ? "font-black text-blue-700"
                           : ""
                       }`}
                     >
@@ -254,7 +254,7 @@ export default function AccordionFeatures({ config }: { config?: any }) {
                           feature.additionalInfo.map((info, index) => (
                             <div
                               key={index}
-                              className="flex items-center gap-1.5 text-lg font-medium text-slate-700"
+                              className="flex items-center gap-1.5 text-md font-medium text-slate-700"
                             >
                               {feature.icons?.[index]}
                               {info}
