@@ -61,8 +61,12 @@ export default function AccordionFeatures({ config }: { config?: any }) {
       // image: feature1,
       video: "/feature_1.mp4",
       button: (
-        <Button className="w-full mt-8" onClick={open}>
-          Quiz
+        <Button
+          className="w-full mt-8"
+          aria-label="dobierz odpowiedni plan"
+          onClick={open}
+        >
+          Dobierz odpowiedni plan
         </Button>
       ),
     },
@@ -115,8 +119,12 @@ export default function AccordionFeatures({ config }: { config?: any }) {
       ],
       video: "/feature_1.mp4",
       button: (
-        <Button className="w-full mt-8" onClick={open}>
-          Pobierz
+        <Button
+          className="w-full mt-8"
+          aria-label="pobierz raport"
+          onClick={open}
+        >
+          Pobierz darmowy raport
         </Button>
       ),
     },
@@ -168,8 +176,12 @@ export default function AccordionFeatures({ config }: { config?: any }) {
       ],
       video: "/feature_1.mp4",
       button: (
-        <Button className="w-full mt-8" onClick={open}>
-          Test
+        <Button
+          className="w-full mt-8"
+          aria-label="testuj system"
+          onClick={open}
+        >
+          Przeestuj system
         </Button>
       ),
     },
